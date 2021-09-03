@@ -2,6 +2,7 @@ package application
 
 import (
 	"fmt"
+	"github.com/harlesbayu/bookstore-items-api/src/client/elasticsearch"
 	"net/http"
 	"time"
 
@@ -14,6 +15,7 @@ var (
 )
 
 func StartApplication() {
+	elasticsearch.Init()
 
 	mapUrls()
 
